@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>Invitación XV | Merlina</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenedor principal de la invitación -->
+    <div class="invitation-container">
+        <!-- Hero Section con imagen personalizada -->
+        <div class="hero-section-fixed" id="heroSection">
+            <div class="hero-custom-image-fixed" id="heroCustomImage">
+                <img id="customHeroImg" src="invitacion-xv.png" alt="Merlina XV años">
+            </div>
+            
+            <!-- Reproductor de música DENTRO de la imagen (en la parte inferior) -->
+            <div class="music-player-inside" id="musicPlayer">
+                <button id="playPauseBtn" class="play-pause-btn-inside">
+                    <i class="fas fa-play"></i>
+                </button>
+                <div class="music-info-inside">
+                    <span class="music-title-inside">♫ Canción de XV años</span>
+                </div>
+                <div class="volume-control-inside">
+                    <i class="fas fa-volume-up"></i>
+                    <input type="range" id="volumeSlider" min="0" max="100" value="50">
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIONES CON ANIMACIÓN SCROLL -->
+        
+        <!-- 1. Mensaje especial de bienvenida -->
+        <div class="scroll-section" id="sec1">
+            <div class="section-content welcome-section">
+                <h2 class="section-title">Para quienes llenan mi vida de amor</h2>
+                <div class="gold-accent"></div>
+                <p class="section-text">
+                    Con inmensa alegría y un corazón lleno de gratitud, los invito a compartir uno de los días más especiales de mi vida. 
+                    Cumplir quince años no es solo celebrar una fecha, es marcar el inicio de una nueva etapa, llena de sueños, aprendizajes 
+                    y momentos que quedarán para siempre en el corazón.
+
+                    <br><br>
+
+                    Es un momento único, donde dejo atrás mi niñez para comenzar a escribir una nueva historia, rodeada del amor de las personas 
+                    que más quiero. Por eso, más que una fiesta, este día representa un recuerdo que voy a atesorar toda mi vida.
+
+                    <br><br>
+
+                    Su presencia no solo me llena de felicidad, sino que hace que este momento sea aún más significativo. Gracias por ser parte 
+                    de mi vida, por acompañarme siempre y por compartir conmigo este comienzo tan importante.
+
+                    <br><br>
+
+                    Los espero con todo mi cariño para vivir juntos una noche inolvidable ✨
+                </p>
+            </div>
+        </div>
+
+        <!-- 2. CONTADOR - Sección debajo del mensaje especial -->
+        <div class="scroll-section countdown-section" id="countdownSection">
+            <div class="countdown-wrapper-modern">
+                <h3 class="countdown-title"><i class="fas fa-hourglass-half"></i> ¡Faltan muy poco!</h3>
+                <div class="countdown-timer-modern" id="countdownContainer">
+                    <div class="time-box-modern"><span class="time-number-modern" id="days">00</span><div class="time-label-modern">DÍAS</div></div>
+                    <div class="time-box-modern"><span class="time-number-modern" id="hours">00</span><div class="time-label-modern">HORAS</div></div>
+                    <div class="time-box-modern"><span class="time-number-modern" id="minutes">00</span><div class="time-label-modern">MIN</div></div>
+                    <div class="time-box-modern"><span class="time-number-modern" id="seconds">00</span><div class="time-label-modern">SEG</div></div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- 4. Detalles de la Misa (19/04) -->
+        <div class="scroll-section card-section" id="sec3">
+            <div class="event-card">
+                <h3><i class="fas fa-church"></i> Misa</h3>
+                <div class="event-item">
+                    <div class="event-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="event-text"><strong>Fecha:</strong><p>Sábado 19 de Abril, 2025</p></div>
+                </div>
+                <div class="event-item">
+                    <div class="event-icon"><i class="fas fa-clock"></i></div>
+                    <div class="event-text"><strong>Hora:</strong><p>20:30 horas</p></div>
+                </div>
+                <div class="event-item">
+                    <div class="event-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="event-text"><strong>Lugar:</strong><p>Parroquia Nuestra Señora de Fátima</p></div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- 6. Detalles de la Recepción (25/04/2026) -->
+        <div class="scroll-section card-section" id="sec5">
+            <div class="event-card reception-card">
+                <h3><i class="fas fa-glass-cheers"></i> Gran Fiesta de XV</h3>
+                <div class="event-item">
+                    <div class="event-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="event-text"><strong>Fecha:</strong><p>Viernes 25 de Abril, 2026</p></div>
+                </div>
+                <div class="event-item">
+                    <div class="event-icon"><i class="fas fa-clock"></i></div>
+                    <div class="event-text"><strong>Hora:</strong><p>21:30 horas</p></div>
+                </div>
+                <div class="event-item">
+                    <div class="event-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="event-text"><strong>Ubicación:</strong><p>Rancho Don José - Alto Verde</p></div>
+                </div>
+                <p class="extra-text">
+                    Una noche pensada para disfrutar, reír, bailar y crear recuerdos que nos acompañarán para siempre.
+                </p>
+            </div>
+        </div>
+
+        <!-- 7. Dress code y regalo -->
+        <div class="scroll-section card-section" id="sec6">
+            <div class="dress-code-gold">
+                <i class="fas fa-tshirt" style="color:#d4af37; font-size: 1.8rem;"></i>
+                <p style="font-weight: 600; margin-top: 5px;">Código de vestimenta: <span class="gold-text">Gala</span></p>
+                <p style="font-size:0.85rem; color: #9c7e1c; margin-top: 5px;">Elegancia y glamour para celebrar juntos</p>
+                <br>
+                <p class="dress-extra" style="font-size: 15px;">
+                    Esta noche es única y muy especial para mí, y me encantaría que todos formemos parte de esa magia. 
+                    Vestir de manera formal no es solo un detalle, es una forma de acompañar este momento tan importante 
+                    y hacerlo aún más elegante<i class="fas fa-heart" style="color: #d4af37;"></i>.
+                </p>
+            </div>
+            <div class="alias-box">
+                <i class="fas fa-gift"></i>
+                <p><strong>Regalo por alias</strong><br>Transferencia: <span class="alias-name">MERLINA.QUINCE</span><br>¡Tu presencia es el mejor regalo, pero si deseas colaborar, este es nuestro alias!</p>
+            </div>
+        </div>
+
+        
+
+        <!-- 9. Confirmación -->
+        <div class="scroll-section card-section" id="sec8">
+            <div class="confirm-card">
+                <p><i class="fas fa-calendar-alt" style="color: #d4af37; margin-right: 6px;"></i> Confirma tu asistencia antes del <strong style="color: #d4af37;">11 de abril</strong></p>
+                <button class="btn-confirm" id="confirmBtn"><i class="fas fa-check-circle"></i> Confirmar asistencia</button>
+                <div id="toastMsg" class="toast-msg"></div>
+            </div>
+        </div>
+
+        <div class="scroll-section card-section drive-section">
+            <div class="drive-card">
+            
+                <h3 class="drive-title">📸 Álbum de mis <strong style="color: #d4af37;">VX</strong></h3>
+            
+                <p class="drive-text">
+                    Después de la fiesta podés subir tus fotos y recuerdos
+                </p>
+            
+                <a href="https://drive.google.com/tu-link-aqui" target="_blank" class="drive-btn">
+                    Subir fotos
+                </a>
+            
+                <p class="drive-note">
+                    ¡Entre todos armamos el mejor recuerdo! 💕
+                </p>
+            
+            </div>
+        </div>
+        
+        <footer>
+            <i class="fas fa-heart"></i> Con todo mi cariño, Merlina <i class="fas fa-feather-alt"></i>
+        </footer>
+    </div>
+
+
+    <!-- Audio para música de fondo -->
+    <audio id="backgroundMusic" loop preload="auto">
+        <source src="" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
