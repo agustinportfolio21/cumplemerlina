@@ -95,10 +95,10 @@ let activeElements = 0;
 const MAX_ELEMENTS = 12; // Máximo de elementos visibles al mismo tiempo
 
 // Íconos solo mariposas y flores
-const icons = ['🦋', '🌸', '🦋', '🌼', '🦋', '🌷', '🦋', '🌺', '🌸'];
+const icons = ['🦋', '🌸', '🌼','🦋','🦋','🌼','🦋','🦋','🦋',];
 
 // Colores para mariposas (morados y dorados)
-const purpleShades = ['#9b59b6', '#8e44ad', '#af7ac5', '#c39bd3', '#b57edc', '#a569bd', '#c48bdb', '#aa6dc9', '#b980ea'];
+const purpleShades = ['#e9df53', '#e9df89', '#c2a31a', '#e0cc12', '#968213', '#c7bb0f', '#f8f4bd', '#9e9c09', '#d3c82d'];
 
 // Colores para flores (dorados y champagne)
 const flowerColors = ['#d4af37', '#c9a86b', '#b88d5a', '#e8cf97', '#dbb45c', '#e2bf7e', '#f3e0b0'];
@@ -472,7 +472,7 @@ if (confirmBtn) {
 
         const mensaje = `Hola, soy ${nombre} y confirmo mi asistencia a los XV de Merlina 🎉`;
 
-        const numero = "5493865347377"; // CAMBIAR
+        const numero = "5493865348558"; // CAMBIAR
 
         const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
 
