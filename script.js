@@ -95,7 +95,7 @@ let activeElements = 0;
 const MAX_ELEMENTS = 12; // Máximo de elementos visibles al mismo tiempo
 
 // Íconos solo mariposas y flores
-const icons = ['🦋', '🌸', '🌼','🦋','🦋','🌼','🦋','🦋','🦋',];
+const icons = [];
 
 // Colores para mariposas (morados y dorados)
 const purpleShades = ['#e9df53', '#e9df89', '#c2a31a', '#e0cc12', '#968213', '#c7bb0f', '#f8f4bd', '#9e9c09', '#d3c82d'];
