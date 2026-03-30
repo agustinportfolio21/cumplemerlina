@@ -470,7 +470,7 @@ if (confirmBtn) {
 
         if (!nombre) return;
 
-        const mensaje = `Hola, soy ${nombre} y confirmo mi asistencia a los 15 años 🎉`;
+        const mensaje = `Hola, soy ${nombre} y confirmo mi asistencia a los XV de Merlina 🎉`;
 
         const numero = "5493865347377"; // CAMBIAR
 
