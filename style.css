@@ -66,7 +66,7 @@ body {
     z-index: 1;
 }
 
-/* ========== HERO SECTION CON IMAGEN ========== */
+/* ========== HERO SECTION CON IMAGEN - VERSIÓN RESPONSIVA ========== */
 .hero-section-fixed {
     position: relative;
     width: 100%;
@@ -78,12 +78,15 @@ body {
 .hero-custom-image-fixed {
     position: relative;
     width: 100%;
+    display: block;
+    line-height: 0;
 }
 
 .hero-custom-image-fixed img {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: contain;
 }
 
 /* ========== REPRODUCTOR DE MÚSICA DENTRO DE LA IMAGEN ========== */
@@ -171,6 +174,7 @@ body {
     cursor: pointer;
 }
 
+/* ========== RESPONSIVE PARA MÓVILES (400px) ========== */
 @media (max-width: 550px) {
     .music-player-inside {
         bottom: 12px;
@@ -528,6 +532,47 @@ footer {
     .card-section {
         padding: 1rem 1rem 1.5rem;
     }
+    
+    /* Ajustes específicos para pantallas de 400px */
+    .event-card {
+        padding: 1.2rem;
+    }
+    
+    .event-item {
+        gap: 0.8rem;
+    }
+    
+    .event-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+    }
+    
+    .event-text strong {
+        font-size: 0.9rem;
+    }
+    
+    .event-text p {
+        font-size: 0.8rem;
+    }
+    
+    .section-text {
+        font-size: 0.85rem;
+        max-width: 95%;
+    }
+    
+    .confirm-card {
+        padding: 1.5rem;
+    }
+    
+    .drive-title {
+        font-size: 1.2rem;
+    }
+    
+    .drive-btn {
+        padding: 0.7rem 1.4rem;
+        font-size: 0.85rem;
+    }
 }
 
 /* ========== ELEMENTOS FLOTANTES DINÁMICOS (desde costados) ========== */
@@ -552,7 +597,6 @@ footer {
 }
 
 /* ========== SECCIÓN DRIVE FOTOS ========== */
-
 .drive-section {
     margin-top: 1.5rem;
 }
@@ -644,4 +688,146 @@ footer {
     margin-top: 8px;
     color: #6b4f2c;
     line-height: 1.4;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #efe2cf, #e8d9c2);
+    text-align: center;
+    padding: 2rem 1.5rem;
+    color: #8b6b42;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-message {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #7a5a3a;
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+}
+
+.footer-message i {
+    color: #d4af37;
+    margin: 0 5px;
+}
+
+.footer-divider {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #d4af37, #b8860b, #d4af37, transparent);
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+.footer-credits {
+    margin-top: 1rem;
+}
+
+.credits-text {
+    font-size: 0.85rem;
+    color: #6b4f2c;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.credits-text i {
+    color: #d4af37;
+    margin-right: 6px;
+}
+
+.business-name {
+    color: #b8860b;
+    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+
+.footer-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: #6b4f2c;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 6px 16px;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+}
+
+.footer-phone i {
+    color: #d4af37;
+    font-size: 0.9rem;
+}
+
+.footer-phone:hover {
+    background: rgba(212, 175, 55, 0.2);
+    transform: translateY(-2px);
+}
+
+.footer-phone span {
+    font-weight: 500;
+}
+
+/* Responsive para móviles */
+@media (max-width: 550px) {
+    footer {
+        padding: 1.5rem 1rem;
+    }
+    
+    .footer-message {
+        font-size: 1rem;
+    }
+    
+    .credits-text {
+        font-size: 0.75rem;
+    }
+    
+    .business-name {
+        font-size: 0.9rem;
+        display: inline-block;
+        margin-top: 3px;
+    }
+    
+    .footer-phone {
+        font-size: 0.75rem;
+        padding: 5px 12px;
+    }
+    
+    .footer-phone i {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-message {
+        font-size: 0.9rem;
+    }
+    
+    .credits-text {
+        font-size: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .business-name {
+        font-size: 0.85rem;
+        margin-left: 0;
+    }
+    
+    .footer-phone {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+        margin-top: 5px;
+    }
 }
